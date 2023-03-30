@@ -7,7 +7,10 @@
 
 ## About
 Weaponized Autism is a chess engine estimated to around ~2000 ELO.
-It uses the Minmax Algorithm with alpha-beta pruning.
+It uses the Minimax Algorithm with alpha-beta pruning.
+
+Minimax Algorithm sample: <br>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/MIN_MAX2.jpg" height=200>
 
 ## How to use
 
