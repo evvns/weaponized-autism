@@ -1,0 +1,28 @@
+{
+  "name": "Weaponized-Autism",
+  "version": "0.2.0",
+  "description": "the most dangerous chess ai ever. if autism was gay magnus carlsen.",
+  "main": "src/server/app.js",
+  "scripts": {
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./ --out-dir dist",
+    "start": "rm -rf dist && parcel src/index.html --out-dir dist",
+    "test": "node test/wac300.js"
+  },
+  "keywords": [
+    "chess",
+    "ai"
+  ],
+  "author": "evan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evvns/weaponized-autism"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "chessboardjs": "^0.0.1",
+    "jquery": "^3.5.0",
+    "lodash": "^4.17.21",
+    "parcel-bundler": "^1.12.4"
+  }
+}

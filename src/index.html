@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WEAPONIZED AUTISM</title>
+   
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="board"></div>
+        <div id="controls">
+            <div id="status"></div>
+            <hr/>
+            <div class="control-row">
+                <div class="control-row-left">FEN:</div>
+                <div class="control-row-right">
+                    <input type="text" id="fen" readonly>
+                </div>
+            </div>
+            <div class="control-row">
+                <div class="control-row-left">Auto-pilot White:</div>
+                <div class="control-row-right">
+                    <input type="checkbox" id="autopilotWhite">
+                </div>
+            </div>
+            <div class="control-row">
+                <div class="control-row-left">Auto-pilot Black:</div>
+                <div class="control-row-right">
+                    <input type="checkbox" id="autopilotBlack" checked>
+                </div>
+            </div>
+            <div class="control-row">
+                <div class="control-row-left">Depth Limit (Soft):</div>
+                <div class="control-row-right">
+                    <input type="number" id="depthLimitSoft" value="2">
+                </div>
+            </div>
+            <div class="control-row">
+                <div class="control-row-left">Depth Limit (Hard):</div>
+                <div class="control-row-right">
+                    <input type="number" id="depthLimitHard" value="6">
+                </div>
+            </div>
+            <div id="buttons">
+                <button id="evalButton">Eval</button>
+                <button id="searchButton">Search</button>
+                <button id="loadFenButton">Load FEN</button>
+                <button id="loadWacButton">Load WAC</button>
+                <button id="redrawBoardButton">Redraw</button>
+                <button id="undoButton">Undo</button>
+                <button id="resetButton">Reset</button>
+            </div>
+            <hr/>
+            <div id="console"></div>
+        </div>
+    </div>
+
+
+    <script src="./index.js"></script>
+    <script type='text/javascript'>
+        //some default pre init
+        var Countly = window['Countly'] = window['Countly'] || {};
+        Countly.q = Countly.q || [];
+        //provide countly initialization parameters
+        Countly.app_key = '0290fd6283ab4915b2b81b7acd87aba2fb7a0733';
+        Countly.url = 'https://countly.deniz.co';
+        Countly.q.push(['track_sessions']);
+        Countly.q.push(['track_pageview']);
+        Countly.q.push(['track_errors']);
+        //load countly script asynchronously
+        (function() {
+           var cly = document.createElement('script'); cly.type = 'text/javascript';
+           cly.async = true;
+           //enter url of script here
+           cly.src = 'https://countly.deniz.co/sdk/web/countly.min.js';
+           cly.onload = function(){Countly.init()};
+           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+        })();
+    </script>
+</body>
+</html>
+
+
