@@ -1,6 +1,5 @@
 <div align=center>
-<img src="https://files.doxbin.gg/y32n2yLw.png" height=190>
-<h1>Weaponized Autism </h1>
+<img src="https://files.doxbin.gg/Y010QjLE.png" height=390>
 <hr>
 </div>
 
